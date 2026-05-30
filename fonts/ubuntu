@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap");
+
+/* NUKE Discord's font variables */
+:root {
+  --font-primary: 'Ubuntu', sans-serif !important;
+  --font-display: 'Ubuntu', sans-serif !important;
+  --font-code: 'Ubuntu Mono', monospace !important;
+  --font-headline: 'Ubuntu', sans-serif !important;
+  --font-sizes-xs: 12px !important;
+}
+
+/* Force override on all font-family declarations */
+* {
+  font-family: 'Ubuntu', sans-serif !important;
+}
+
+code, pre {
+  font-family: 'Ubuntu Mono', monospace !important;
+}
+
+/* Extra Discord 2026 font var targets */
+:root[class*="theme-"] {
+  --font-primary: 'Ubuntu', sans-serif !important;
+  --font-secondary: 'Ubuntu', sans-serif !important;
+}
+
+/* Input fields */
+textarea, input {
+  font-family: 'Ubuntu', sans-serif !important;
+}
+
+/* Message content - common 2026 pattern */
+[class*="message-"][class*="-content"],
+[class*="username-"],
+[class*="compact-"] {
+  font-family: 'Ubuntu', sans-serif !important;
+}
